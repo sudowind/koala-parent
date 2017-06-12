@@ -9,6 +9,9 @@ import Rank from './components/rank.vue'
 import ERscore from './components/er_score.vue'
 import Report from './components/student_report.vue'
 
+import 'jquery'
+import 'bootstrap/dist/js/bootstrap'
+
 // import Hello from './components/Hello'
 
 Vue.use(VueRouter)
@@ -27,7 +30,7 @@ const routes = [
     component: ERscore
   },
   {
-    path: '/report.vue',
+    path: '/report',
     component: Report
   }
 ]
