@@ -4,7 +4,7 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 
 import axios from './http'
-import store from './store'
+import store from './store/store'
 import router from './router'
 
 import App from './App'
