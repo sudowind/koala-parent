@@ -16,8 +16,8 @@
     </div>
     <div>
       <router-link to="/rank"><div class="w-bg tab-list">排行榜</div></router-link>
-      <div class="w-bg tab-list"><router-link to="/erScore">ER值测评报告</router-link></div>
-      <div class="w-bg tab-list"><router-link to="/report">学情分析</router-link></div>
+      <router-link to="/erscore"><div class="w-bg tab-list">ER值测评报告</div></router-link>
+    <router-link to="/report"><div class="w-bg tab-list">学情分析</div></router-link>
       <!--<div><router-link to="/know_er">了解ER</router-link></div>-->
     </div>
   </div>

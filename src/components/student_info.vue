@@ -50,4 +50,8 @@
     margin: auto;
     border: 2px solid #ffffff;
   }
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
 </style>

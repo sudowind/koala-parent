@@ -26,7 +26,7 @@ const routes = [
     component: Rank
   },
   {
-    path: '/er_score',
+    path: '/erscore',
     component: ERscore
   },
   {
