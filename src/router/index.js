@@ -35,28 +35,28 @@ const wechatAuthUrl = (type, redirectUri, state) => url.format({
 const routes = [
   {
     path: '/',
-    component: Home,
-    meta: {
-      requireAuth: true
-    }
+    component: Home
+    // meta: {
+    //   requireAuth: true
+    // }
   },
   {
-    path: '/assignments',
-    meta: {
-      requireAuth: true
-    }
+    path: '/assignments'
+    // meta: {
+    //   requireAuth: true
+    // }
   },
   {
-    path: '/bookAssignments',
-    meta: {
-      requireAuth: true
-    }
+    path: '/bookAssignments'
+    // meta: {
+    //   requireAuth: true
+    // }
   },
   {
-    path: '/passageAssignments',
-    meta: {
-      requireAuth: true
-    }
+    path: '/passageAssignments'
+    // meta: {
+    //   requireAuth: true
+    // }
   },
   {
     path: '/binding',
@@ -103,12 +103,10 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   if (to.path === '/wechat_login') {
     const openId = to.query['openId']
-    const userId = to.query['childId']
+    const userId = to.query['userId']
     const status = to.query['status']
 
-    console.log('openId = ', openId)
-
-    store.commit(types.LOGIN, openId, userId)
+    store.commit(types.LOGIN, { openId, userId })
 
     console.log('state = ', status)
     next(status)
@@ -122,6 +120,8 @@ router.beforeEach((to, from, next) => {
   }
 
   if (to.meta.requireAuth && !store.state.userId) {
+    console.log('open id = ', store.state.openId)
+    console.log('user id = ', store.state.userId)
     next({
       path: '/binding'
     })

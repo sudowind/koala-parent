@@ -10,9 +10,9 @@ export default new Vuex.Store({
     userId: null
   },
   mutations: {
-    [types.LOGIN]: (state, openId, userId) => {
-      state.openId = openId
-      state.userId = userId
+    [types.LOGIN]: (state, data) => {
+      state.openId = data.openId
+      state.userId = data.userId
     },
     [types.LOGOUT]: (state) => {
       state.openId = null

@@ -4,7 +4,6 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import iView from 'iview'
 
-
 import axios from './http'
 import store from './store/store'
 import router from './router'
