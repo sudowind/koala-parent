@@ -2,49 +2,26 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import FastClick from 'fastclick'
-import VueRouter from 'vue-router'
+import iView from 'iview'
+
+import axios from './http'
+import store from './store/store'
+import router from './router'
+
 import App from './App'
-import Home from './components/homepage.vue'
-import Rank from './components/rank.vue'
-import ERscore from './components/er_score.vue'
-import Report from './components/student_report.vue'
 
-import 'jquery'
-import 'bootstrap/dist/js/bootstrap'
+import 'iview/dist/styles/iview.css'
 
-// import Hello from './components/Hello'
-
-Vue.use(VueRouter)
-
-const routes = [
-  {
-    path: '/',
-    component: Home
-  },
-  {
-    path: '/rank',
-    component: Rank
-  },
-  {
-    path: '/erscore',
-    component: ERscore
-  },
-  {
-    path: '/report',
-    component: Report
-  }
-]
-
-const router = new VueRouter({
-  routes
-})
-
+Vue.use(iView)
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
 
 /* eslint-disable no-new */
 new Vue({
+  axios,
   router,
+  store,
   render: h => h(App)
 }).$mount('#app-box')
