@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "0.16.2",
     "fastclick": "^1.0.6",
+    "iview": "2.0.0-rc.17",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
     "vuex": "^2.1.1",

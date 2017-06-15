@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <div class="tab border-1px">
-      <div class="tab-item">
-        <router-link to="/binding/user">用户</router-link>
-      </div>
-      <div class="tab-item">
-        <router-link to="/binding/tel">手机</router-link>
-      </div>
-      <div class="tab-item">
-        <router-link to="/binding/result">结果</router-link>
-      </div>
+  <div class="binding-container">
+    <div>
+      <Row>
+        <Steps :current="currentStep" size="small">
+          <Step title="账号绑定"></Step>
+          <Step title="验证手机"></Step>
+          <Step title="绑定成功"></Step>
+        </Steps>
+      </Row>
     </div>
 
     <br/>
@@ -22,10 +20,10 @@
   export default {
     data () {
       return {
+        currentStep: 0
       }
     },
     created () {
-      console.log('binding user index created')
     },
     components: {
     }
@@ -34,5 +32,7 @@
 </script>
 
 <style>
-
+.binding-container {
+  padding: 30px 20px;
+}
 </style>

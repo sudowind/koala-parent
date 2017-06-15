@@ -18,17 +18,13 @@ import url from 'url'
 
 Vue.use(VueRouter)
 
-const wechatAuthUrl = (type, state) => url.format({
+const wechatAuthUrl = (type, redirectUri, state) => url.format({
   protocol: 'https',
   host: 'open.weixin.qq.com',
   pathname: 'connect/oauth2/authorize',
   query: {
     appid: 'wx5d0377dccb386b2c',
-    redirect_uri: url.format({
-      protocol: 'http',
-      host: '127.0.0.1:8080',
-      pathname: '/api/users/open/oauth/wechat'
-    }),
+    redirect_uri: redirectUri,
     response_type: 'code',
     scope: type,
     state: state
@@ -43,7 +39,6 @@ const routes = [
     meta: {
       requireAuth: true
     }
-    // beforeEnter: authorHook('snsapi_base', '/')
   },
   {
     path: '/assignments',
@@ -71,20 +66,20 @@ const routes = [
     children: [
       {
         path: 'user',
+        name: 'binding-user',
         component: BindingUser
       },
       {
         path: 'tel',
+        name: 'binding-tel',
         component: BindingTel
       },
       {
         path: 'result',
+        name: 'binding-result',
         component: BindingResult
       }
     ]
-  },
-  {
-    path: '/oauth/wechat'
   },
   {
     path: '/rank',
@@ -107,17 +102,22 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.path === '/wechat_login') {
-    const openId = to.params['openId']
-    const userId = to.params['childId']
-    const status = to.params['status']
+    const openId = to.query['openId']
+    const userId = to.query['childId']
+    const status = to.query['status']
+
+    console.log('openId = ', openId)
 
     store.commit(types.LOGIN, openId, userId)
+
+    console.log('state = ', status)
     next(status)
     return false
   }
 
   if (!store.state.openId) {
-    location.href = wechatAuthUrl('snsapi_base', to.path)
+    const redirectUri = `http://127.0.0.1:8080/api/users/open/oauth/wechat?next=${to.path}`
+    location.href = wechatAuthUrl('snsapi_base', redirectUri)
     return false
   }
 
