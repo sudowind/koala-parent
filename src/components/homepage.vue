@@ -4,24 +4,30 @@
       <student-info></student-info>
     </div>
     <div class="task w-bg">
-      <div class="check clear">
-        <div class="check-all-img div-img"><img src="../../src/assets/img/check-all-work.png" alt=""></div>
-        <div class="task-content">
-          <p class="task-p">查看全部作业</p>
-          <p class="see-all">查看所有老师发布的作业</p>
+      <router-link to="/all_task">
+        <div class="check clear">
+          <div class="check-all-img div-img"><img src="../../src/assets/img/check-all-work.png" alt=""></div>
+          <div class="task-content">
+            <p class="task-p">查看全部作业</p>
+            <p class="see-all">查看所有老师发布的作业</p>
+          </div>
+          <div class="task-right"><img src="../../src/assets/img/task-right.png" alt=""></div>
         </div>
-        <div class="task-right"><img src="../../src/assets/img/task-right.png" alt=""></div>
-      </div>
+      </router-link>
+
 
 
       <div class="work">
-        <div class="col-xs-6">
-          <div class="div-img book-work-img"><img src="../../src/assets/img/book-work.png" alt=""></div>
-          <div class="work-right">
-            <div>书籍作业</div>
-            <small>点击查看详情</small>
+        <router-link to="/book_work">
+          <div class="col-xs-6">
+            <div class="div-img book-work-img"><img src="../../src/assets/img/book-work.png" alt=""></div>
+            <div class="work-right">
+              <div>书籍作业</div>
+              <small>点击查看详情</small>
+            </div>
           </div>
-        </div>
+        </router-link>
+
 
         <div class="col-xs-6">
           <div class="div-img book-work-img"><img src="../../src/assets/img/essay-work.png" alt=""></div>
@@ -105,7 +111,6 @@
   }
   .task {
     margin: 1em 0;
-    /*padding: 1em;*/
   }
   .tab-list {
     margin-bottom: 0.5em;
@@ -154,20 +159,20 @@
   .work{
     width: 100%;
     text-align: center;
-    height: 4em;
-
+    height: 5em;
+    border-bottom: 1px solid #dedede;
   }
   .book-work-img{
     width: 2em;
     height: 2em;
-    margin-top: 1em;
-    margin-right: 0.8em;
-    margin-left: 1.2em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    margin-left: 1.8em;
   }
   .work-right{
     float: left;
-    height: 4em;
-    padding:0.5em 0;
+    height: 5em;
+    padding: 1em 0;
   }
   .work .col-xs-6:nth-of-type(1){
     border-right: 1px solid #dbdbdb;
