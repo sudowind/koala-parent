@@ -19,7 +19,7 @@ export default {
 
   body {
     font-size: 14px;
-    letter-spacing: 0.03em;
+    /*letter-spacing: 0.03em;*/
     background-color: #f6f6f6;
   }
   a, a:active, a:hover {
