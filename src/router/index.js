@@ -10,6 +10,7 @@ import ERscore from '../components/er_score.vue'
 import Report from '../components/student_report.vue'
 import AllTask from '../components/all_task.vue'
 import BookWork from '../components/book_work.vue'
+import EssayWork from '../components/essay_work.vue'
 
 import Binding from '../components/binding/index.vue'
 import BindingUser from '../components/binding/user.vue'
@@ -102,6 +103,10 @@ const routes = [
   {
     path: '/book_work',
     component: BookWork
+  },
+  {
+    path: '/essay_work',
+    component: EssayWork
   }
 ]
 

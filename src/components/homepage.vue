@@ -28,14 +28,16 @@
           </div>
         </router-link>
 
-
-        <div class="col-xs-6">
-          <div class="div-img book-work-img"><img src="../../src/assets/img/essay-work.png" alt=""></div>
-          <div class="work-right">
-            <div>短文作业</div>
-            <small>点击查看详情</small>
+        <router-link to="/essay_work">
+          <div class="col-xs-6">
+            <div class="div-img book-work-img"><img src="../../src/assets/img/essay-work.png" alt=""></div>
+            <div class="work-right">
+              <div>短文作业</div>
+              <small>点击查看详情</small>
+            </div>
           </div>
-        </div>
+        </router-link>
+
       </div>
       <div class="clear"></div>
     </div>

@@ -7,65 +7,65 @@
       <div class="col-xs-6">已完成</div>
     </div>
 
-    <!--<div>-->
-      <!--<div class="remind">-->
-        <!--<div>共13本书籍作业待完成，2本已逾期，赶快督促一下吧~</div>-->
-        <!--&lt;!&ndash;<div>共完成14本书籍作业~</div>&ndash;&gt;-->
-      <!--</div>-->
+    <div>
+      <div class="remind">
+        <div>共13本书籍作业待完成，2本已逾期，赶快督促一下吧~</div>
+        <!--<div>共完成14本书籍作业~</div>-->
+      </div>
 
-      <!--<div class="unfinished">-->
-        <!--<div class="book-list">-->
-          <!--<div class="book-left">-->
-            <!--<div class="book-img"><img src="../assets/logo.png" alt=""></div>-->
-            <!--<div class="book-er">850ER</div>-->
-          <!--</div>-->
+      <div class="unfinished">
+        <div class="book-list">
+          <div class="book-left">
+            <div class="book-img"><img src="../assets/logo.png" alt=""></div>
+            <div class="book-er">850ER</div>
+          </div>
 
-          <!--<div class="book-right">-->
+          <div class="book-right">
 
-            <!--<div>-->
+            <div>
 
-              <!--<div class="clear right-up">-->
-                <!--<div class="book-name">鸭子骑车记</div>-->
-                <!--<div class="book-status"><img src="../assets/img/task-overdue.png" alt=""></div>-->
-              <!--</div>-->
+              <div class="clear right-up">
+                <div class="book-name">鸭子骑车记</div>
+                <div class="book-status"><img src="../assets/img/task-overdue.png" alt=""></div>
+              </div>
+              <div class="book-font">字数：3.4万</div>
+              <div class="book-time">作业时间：2017.03.05-2017.04.05</div>
+              <div class="book-time">自主发布</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="finished">
+        <div class="book-list">
+
+          <div class="book-left">
+            <div class="book-img"><img src="../assets/logo.png" alt=""></div>
+            <div class="book-er">850ER</div>
+          </div>
+
+          <div class="book-right">
+            <div>
+              <div class="clear right-up">
+                <div class="book-name">鸭子骑车记</div>
+                <div class="book-status"><img src="../assets/img/task-overdue.png" alt=""></div>
+              </div>
+              <div class="right-middle clear">
+                <div class="author">炎月</div>
+                <div class="time">2017.01.01</div>
+                <div class="font">11万字</div>
+              </div>
               <!--<div class="book-font">字数：3.4万</div>-->
               <!--<div class="book-time">作业时间：2017.03.05-2017.04.05</div>-->
               <!--<div class="book-time">自主发布</div>-->
-            <!--</div>-->
+              <div class="describe">11111111111111</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-
-      <!--<div class="finished">-->
-        <!--<div class="book-list">-->
-
-          <!--<div class="book-left">-->
-            <!--<div class="book-img"><img src="../assets/logo.png" alt=""></div>-->
-            <!--<div class="book-er">850ER</div>-->
-          <!--</div>-->
-
-          <!--<div class="book-right">-->
-            <!--<div>-->
-              <!--<div class="clear right-up">-->
-                <!--<div class="book-name">鸭子骑车记</div>-->
-                <!--<div class="book-status"><img src="../assets/img/task-overdue.png" alt=""></div>-->
-              <!--</div>-->
-              <!--<div class="right-middle clear">-->
-                <!--<div class="author">炎月</div>-->
-                <!--<div class="time">2017.01.01</div>-->
-                <!--<div class="font">11万字</div>-->
-              <!--</div>-->
-              <!--&lt;!&ndash;<div class="book-font">字数：3.4万</div>&ndash;&gt;-->
-              <!--&lt;!&ndash;<div class="book-time">作业时间：2017.03.05-2017.04.05</div>&ndash;&gt;-->
-              <!--&lt;!&ndash;<div class="book-time">自主发布</div>&ndash;&gt;-->
-              <!--<div class="describe">11111111111111</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-
-    <!--</div>-->
+    </div>
 
 
     <!--空白页-->
