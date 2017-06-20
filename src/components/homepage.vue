@@ -95,7 +95,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
   .student-info {
     background: url(../assets/img/student_bg.png) no-repeat;
     background-size: 100% 100%;

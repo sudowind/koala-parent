@@ -32,4 +32,10 @@ export default {
   .clear {
     clear: both;
   }
+  .clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    zoom:1;
+  }
 </style>

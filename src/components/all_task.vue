@@ -87,7 +87,7 @@
 <script>
 
 </script>
-<style>
+<style scoped>
   .task-bg{
     background: url(../assets/img/task_bg.png) no-repeat;
     background-size: 100% 100%;
