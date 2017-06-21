@@ -51,7 +51,7 @@
           </div>
         </div>
       </router-link>
-      <router-link to="/erscore">
+      <router-link to="/er_score">
         <div class="w-bg tab-list">
           <div class="div-img"><img src="../../src/assets/img/er-report.png" alt=""></div>
           <div class="task-content">
