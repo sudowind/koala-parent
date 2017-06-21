@@ -1,16 +1,11 @@
 <template>
   <div class="binding-container">
-    <div>
-      <Row>
-        <Steps :current="currentStep" size="small">
-          <Step title="账号绑定"></Step>
-          <Step title="验证手机"></Step>
-          <Step title="绑定成功"></Step>
-        </Steps>
-      </Row>
+    <div class="steps">
+      <div class="step index"></div>
+      <div class="step"></div>
+      <div class="step"></div>
     </div>
 
-    <br/>
     <router-view></router-view>
   </div>
 </template>
@@ -32,7 +27,23 @@
 </script>
 
 <style>
-.binding-container {
-  padding: 30px 20px;
-}
+  .binding-container {
+    padding: 40px 30px;
+  }
+  .steps{
+    width: 90%;
+    text-align: center;
+    background: #fff;
+    height: 0.4em;
+    margin:0 auto;
+  }
+  .steps .index{
+    background: #9bbfe8;
+  }
+  .step{
+    width: 33%;
+    height: 100%;
+    float: left;
+  }
+
 </style>

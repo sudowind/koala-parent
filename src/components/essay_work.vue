@@ -46,6 +46,25 @@
 
   </div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        bg: ''
+      }
+    },
+    methods: {
+      essay_bg () {
+
+      }
+    },
+    created () {
+
+    }
+  }
+</script>
+
 <style scoped>
   .book-tab{
     width: 100%;
@@ -149,4 +168,3 @@
     padding:  0.04em 0.4em;
   }
 </style>
-
